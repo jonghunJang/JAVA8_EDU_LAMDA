@@ -3,6 +3,7 @@ package lambdasinaction._02stream.basic2;
 import java.util.*;
 
 import static java.util.Comparator.comparing;
+import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
 
 public class PuttingIntoPractice{
@@ -42,7 +43,9 @@ public class PuttingIntoPractice{
 
         
         // Query 4: Return a string of all traders names sorted alphabetically.
-        String names = transactions.stream().map(tx -> tx.getTrader().getName()).distinct().sorted().reduce("", (name1,name2)->name1+", "+name2).substring(2);
+//        String names = transactions.stream().map(tx -> tx.getTrader().getName()).distinct().sorted().reduce("", (name1,name2)->name1+", "+name2).substring(2);
+        String names = transactions.stream().map(tx -> tx.getTrader().getName()).distinct().sorted().collect(joining(", ")) ;
+       
         System.out.println(names);
 
         
