@@ -1,0 +1,9 @@
+New York,New York,8537673
+Los Angeles,California,3976322
+Chicago,Illinois,2704958
+San Diego,California,1406630
+San Antonio,Texas,1492510
+Dallas,Texas,1317929
+Austin,Texas,947890
+Nashville,Tennessee,660388
+Memphis,Tennessee,652717
